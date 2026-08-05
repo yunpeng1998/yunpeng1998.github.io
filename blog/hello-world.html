@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="author" content="Yunpeng Bai">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Hello, World — Yunpeng Bai</title>
+  <link rel="stylesheet" type="text/css" href="../stylesheet.css">
+  <script>
+    (function () {
+      var saved = localStorage.getItem("theme");
+      var theme = saved || (window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light");
+      document.documentElement.setAttribute("data-theme", theme);
+    })();
+  </script>
+</head>
+
+<body>
+  <div class="post-container">
+
+    <header class="site-header">
+      <span class="logo">YUNPENG BAI</span>
+      <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode" title="Toggle theme">◐</button>
+    </header>
+
+    <a class="back-link" href="../index.html">← Back to home</a>
+
+    <article class="post">
+      <h1>Hello, World: This Is an Example Post</h1>
+      <p class="post-meta">
+        <span>2026.08.05</span>
+        <span>·</span>
+        <span>Yunpeng Bai</span>
+      </p>
+
+      <div class="post-content">
+        <p>
+          This is a template post showing what a blog entry looks like on this site.
+          Replace the title, date, and everything below with your own writing —
+          the layout, typography, and dark mode all come for free from the shared stylesheet.
+        </p>
+
+        <h2>Section headings look like this</h2>
+        <p>
+          Regular paragraphs are set in a muted color for comfortable long-form reading,
+          while headings stay high-contrast. Links look like
+          <a href="https://arxiv.org">this</a>.
+        </p>
+
+        <blockquote>
+          Blockquotes are handy for takeaways or quoting a paper — they pick up the accent color automatically.
+        </blockquote>
+
+        <h2>Code</h2>
+        <p>Inline code like <code>torch.nn.Module</code> works, and so do code blocks:</p>
+        <pre><code>import torch
+
+def positional_encoding(x, num_freqs=10):
+    freqs = 2.0 ** torch.arange(num_freqs)
+    return torch.cat([torch.sin(x * f) for f in freqs], dim=-1)</code></pre>
+
+        <h2>Figures</h2>
+        <p>Drop images into <code>blog/</code> (or reuse <code>images/</code>) and reference them:</p>
+        <figure style="margin:0">
+          <img src="../images/pe-field.png" alt="Example figure">
+          <figcaption>Figures get rounded corners and a caption style like this.</figcaption>
+        </figure>
+
+        <h2>How to publish a new post</h2>
+        <p>
+          Copy this file, rename it (e.g. <code>blog/my-next-post.html</code>), edit the content,
+          then add an entry to the Blog list in <code>index.html</code> — there is a commented-out
+          template right in the sidebar. That's it.
+        </p>
+      </div>
+    </article>
+
+    <footer class="site-footer">
+      <span>© 2026 Yunpeng Bai</span>
+      <span><a href="../index.html">yunpeng bai</a></span>
+    </footer>
+
+  </div>
+
+  <script>
+    (function () {
+      var btn = document.getElementById("themeToggle");
+      btn.addEventListener("click", function () {
+        var root = document.documentElement;
+        var next = root.getAttribute("data-theme") === "dark" ? "light" : "dark";
+        root.setAttribute("data-theme", next);
+        localStorage.setItem("theme", next);
+      });
+    })();
+  </script>
+</body>
+</html>

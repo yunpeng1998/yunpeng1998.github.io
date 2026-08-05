@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="author" content="Yunpeng Bai">
+  <meta name="description" content="Yunpeng Bai's Homepage">
+  <meta name="keywords" content="Yunpeng Bai,白云鹏,homepage,主页,computer vision,UT Austin,Tsinghua,image generation,video generation,neural rendering">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Yunpeng Bai (白云鹏)</title>
+  <link rel="stylesheet" type="text/css" href="stylesheet.css">
+  <script>
+    // Apply saved / system theme before paint to avoid flashing
+    (function () {
+      var saved = localStorage.getItem("theme");
+      var theme = saved || (window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light");
+      document.documentElement.setAttribute("data-theme", theme);
+    })();
+  </script>
+</head>
+
+<body>
+  <div class="container">
+
+    <header class="site-header">
+      <span class="logo">YUNPENG BAI</span>
+      <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode" title="Toggle theme">◐</button>
+    </header>
+
+    <div class="layout">
+    <div class="main-col">
+
+    <!-- ================= Intro ================= -->
+    <div class="intro">
+      <div class="portrait">
+        <img src="images/yunpeng.jpg" alt="Portrait of Yunpeng Bai">
+      </div>
+      <div class="intro-text">
+        <h1>Yunpeng Bai<span class="cn">白云鹏</span></h1>
+        <!-- <p class="tagline">Making machines see, imagine, and build the visual world in 3D.</p> -->
+        <div class="hiring-banner">
+          <span class="dot" aria-hidden="true"></span>
+          <span>I am actively looking for <b>full-time positions</b> (Research Scientist / Research Engineer) starting <b>Fall 2026 / Spring 2027</b> — feel free to <a href="mailto:byp215@gmail.com">reach out</a>!</span>
+        </div>
+        <p class="bio">
+          I am a Ph.D. student in Computer Science at UT Austin, advised by
+          <a href="https://www.cs.utexas.edu/~huangqx/">Qixing Huang</a>.
+          I received my M.S. from <a href="https://www.tsinghua.edu.cn/en/">Tsinghua University</a>.
+        </p>
+        <p class="bio">
+          I am searching for a path from <b>visual intelligence</b> to <b>general intelligence</b>.
+          Previously, I worked on 3D-aware generation.
+        </p>
+        <!-- Full bio, kept for later:
+        <p class="bio">
+          I am a Ph.D. student in Computer Science at UT Austin, advised by
+          <a href="https://www.cs.utexas.edu/~huangqx/">Qixing Huang</a>.
+          My interests lie in using computer algorithms to create visually striking content, with a recent focus on
+          3D foundational models and 3D visual content generation.
+          I previously graduated with a master's degree from <a href="https://www.tsinghua.edu.cn/en/">Tsinghua University</a>,
+          where I was an outstanding graduate. During my time at Tsinghua, I interned extensively at
+          <a href="https://ai.tencent.com/ailab/en/index">Tencent AI Lab</a>, where I had the privilege of working with
+          several distinguished researchers, including <a href="https://xuanwangvc.github.io/">Xuan Wang</a>,
+          <a href="https://yzhang2016.github.io/">Yong Zhang</a>, <a href="https://xinntao.github.io/">Xintao Wang</a> and
+          <a href="https://yanpei.me/">Yan-Pei Cao</a>.
+          I also work closely with Prof. <a href="https://scholar.google.com.hk/citations?user=OSDCB0UAAAAJ" target="_blank" rel="noopener">Chao Dong</a>.
+        </p>
+        -->
+
+        <div class="contact-row">
+          <a href="mailto:byp215@gmail.com">✉ byp215@gmail.com</a>
+          <a href="https://scholar.google.com/citations?user=OJNkfm8AAAAJ&hl=en">Google Scholar</a>
+          <a href="https://github.com/yunpeng1998">GitHub</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- ================= News ================= -->
+    <section id="news">
+      <h2 class="section-title">News</h2>
+      <ul class="news-list">
+        <li><span class="date">2026.07</span><span class="what"><b>PE-Field 4D</b> is accepted to <b>SIGGRAPH Asia 2026</b>.</span></li>
+        <li><span class="date">2026.05</span><span class="what">I joined <a href="https://blog.reve.com/posts/a-new-chapter-for-reve/"><b>Reve AI</b></a> (now part of OpenAI) as a research intern.</span></li>
+        <li><span class="date">2026.01</span><span class="what"><b>Positional Encoding Field</b> is accepted to <b>ICLR 2026</b>.</span></li>
+        <li><span class="date">2025.10</span><span class="what"><b>SizeGS</b> is selected as a <b>Best Paper Candidate</b> at ACM MM 2025.</span></li>
+        <li><span class="date">2025.09</span><span class="what"><b>GeoVideo</b> is accepted to <b>NeurIPS 2025</b>.</span></li>
+      </ul>
+    </section>
+
+    <!-- ================= Publications ================= -->
+    <section id="publications">
+      <h2 class="section-title">Selected Publications</h2>
+
+      <article class="pub">
+        <div class="pub-thumb"><img src="images/pe-field.png" alt="Positional Encoding Field"></div>
+        <div class="pub-body">
+          <h3 class="pub-title"><a href="https://proceedings.iclr.cc/paper_files/paper/2026/hash/88f00376aedb947af123a7868fce3e58-Abstract-Conference.html">Positional Encoding Field</a></h3>
+          <p class="pub-authors"><span class="me">Yunpeng Bai</span>, <a href="https://resume.haoxiang.org/">Haoxiang Li</a>, <a href="https://www.cs.utexas.edu/~huangqx/">Qixing Huang</a></p>
+          <p class="pub-venue"><span class="venue-tag">ICLR 2026</span></p>
+          <p class="pub-links">
+            <a href="https://proceedings.iclr.cc/paper_files/paper/2026/hash/88f00376aedb947af123a7868fce3e58-Abstract-Conference.html">PDF</a>
+            <a href="https://yunpeng1998.github.io/PE-Field-HomePage/">Project Page</a>
+          </p>
+          <details class="pub-abstract">
+            <summary>Abstract</summary>
+            <p>We revisit how DiTs organize visual content and discover that patch tokens exhibit a surprising degree of independence: even when PEs are perturbed, DiTs still produce globally coherent outputs, indicating that spatial coherence is primarily governed by PEs. Motivated by this finding, we introduce the Positional Encoding Field (PE-Field), which extends positional encodings from the 2D plane to a structured 3D field. PE-Field incorporates depth-aware encodings for volumetric reasoning and hierarchical encodings for fine-grained sub-patch control, enabling DiTs to model geometry directly in 3D space. Our PE-Field–augmented DiT achieves state-of-the-art performance on single-image novel view synthesis and generalizes to controllable spatial image editing.</p>
+          </details>
+        </div>
+      </article>
+
+      <article class="pub">
+        <div class="pub-thumb"><img src="images/papers_2556s2-file2.jpg" alt="PE-Field 4D"></div>
+        <div class="pub-body">
+          <h3 class="pub-title"><a href="https://arxiv.org/abs/2607.15667">PE-Field 4D: Video Generation Models as Canvas</a></h3>
+          <p class="pub-authors"><span class="me">Yunpeng Bai</span>, <a href="https://resume.haoxiang.org/">Haoxiang Li</a>, <a href="https://www.cs.utexas.edu/~huangqx/">Qixing Huang</a></p>
+          <p class="pub-venue"><span class="venue-tag">SIGGRAPH Asia 2026</span></p>
+          <p class="pub-links">
+            <a href="https://arxiv.org/abs/2607.15667">PDF</a>
+          </p>
+          <details class="pub-abstract">
+            <summary>Abstract</summary>
+            <p>We revisit the role of positional encoding in video diffusion transformers and show that it provides a useful spatial bias for geometry-aware control. If reference tokens are encoded according to their projected locations in the target view, the denoising model is encouraged to retrieve content from position-aligned regions of the input video. Building on this observation, we introduce a geometry-aware cross-attention mechanism that enables target video latent tokens to attend to structured context tokens derived from reference images or frames, with a projected positional encoding scheme that combines target-view 2D reprojection with depth-aware disambiguation.</p>
+          </details>
+        </div>
+      </article>
+
+      <article class="pub">
+        <div class="pub-thumb"><img src="images/GeoVideo.png" alt="GeoVideo"></div>
+        <div class="pub-body">
+          <h3 class="pub-title"><a href="https://neurips.cc/virtual/2025/poster/117160">GeoVideo: Introducing Geometric Regularization into Video Generation Model</a></h3>
+          <p class="pub-authors"><span class="me">Yunpeng Bai</span>, <a href="https://bshfang.github.io/">Shaoheng Fang</a>, <a href="https://richardych.github.io/">Chaohui Yu</a>, <a href="https://scholar.google.com/citations?user=WCRGTHsAAAAJ&hl=en">Fan Wang</a>, <a href="https://www.cs.utexas.edu/~huangqx/">Qixing Huang</a></p>
+          <p class="pub-venue"><span class="venue-tag">NeurIPS 2025</span></p>
+          <p class="pub-links">
+            <a href="https://neurips.cc/virtual/2025/poster/117160">PDF</a>
+            <a href="https://geovideo.github.io/GeoVideo/">Project Page</a>
+          </p>
+          <details class="pub-abstract">
+            <summary>Abstract</summary>
+            <p>We introduce geometric regularization losses into video generation by augmenting latent diffusion models with per-frame depth prediction. We adopt depth as the geometric representation because of the great progress in depth prediction and its compatibility with image-based latent encoders. To enforce structural consistency over time, we propose a multi-view geometric loss that aligns the predicted depth maps across frames within a shared 3D coordinate system.</p>
+          </details>
+        </div>
+      </article>
+
+      <article class="pub">
+        <div class="pub-thumb"><img src="images/25-mm-sizegs.png" alt="SizeGS"></div>
+        <div class="pub-body">
+          <h3 class="pub-title"><a href="./data/25-mm-sizegs.pdf">SizeGS: Size-aware Compression of 3D Gaussian Splatting via Mixed Integer Programming</a></h3>
+          <p class="pub-authors"><a href="https://shuzhaoxie.github.io/">Shuzhao Xie</a>*, Jiahang Liu*, <a href="https://weixiang-zhang.github.io">Weixiang Zhang</a>, Shijia Ge, Sicheng Pan, <a href="https://www.chentang.cc">Chen Tang</a>, <span class="me">Yunpeng Bai</span>, <a href="https://scholar.google.com/citations?user=hTBtRI0AAAAJ&hl=en">Cong Zhang</a>, <a href="https://scholar.google.com/citations?hl=en&user=z2EohmgAAAAJ&view_op=list_works&sortby=pubdate">Xiaoyi Fan</a>, <a href="http://zwang.inflexionlab.org">Zhi Wang</a> &nbsp;<small>(*equal contribution)</small></p>
+          <p class="pub-venue"><span class="venue-tag">ACM MM 2025</span><a class="award-tag" href="https://whova.com/embedded/session/sa54pNCpHUFy1OTIEiEzceQu5kPuSm3dYlEnqAJdV4o%3D/4938072/?widget=primary">🏆 Best Paper Candidate</a></p>
+          <p class="pub-links">
+            <a href="./data/25-mm-sizegs.pdf">PDF</a>
+            <a href="https://shuzhaoxie.github.io/sizegs/">Project Page</a>
+            <a href="https://github.com/mmlab-sigs/sizegs">Code</a>
+          </p>
+        </div>
+      </article>
+
+      <article class="pub">
+        <div class="pub-thumb"><img src="images/fiffdepth.png" alt="FiffDepth"></div>
+        <div class="pub-body">
+          <h3 class="pub-title"><a href="https://arxiv.org/abs/2412.00671">FiffDepth: Feed-forward Transformation of Diffusion-Based Generators for Detailed Depth Estimation</a></h3>
+          <p class="pub-authors"><span class="me">Yunpeng Bai</span>, <a href="https://www.cs.utexas.edu/~huangqx/">Qixing Huang</a></p>
+          <p class="pub-venue"><span class="venue-tag">ICCV 2025</span></p>
+          <p class="pub-links">
+            <a href="https://arxiv.org/abs/2412.00671">PDF</a>
+            <a href="https://github.com/yunpeng1998/FiffDepth/">Code</a>
+            <a href="https://yunpeng1998.github.io/FiffDepth/">Project Page</a>
+          </p>
+          <details class="pub-abstract">
+            <summary>Abstract</summary>
+            <p>We propose an efficient monocular depth estimation approach named FiffDepth, whose key feature is its use of diffusion priors. It transforms diffusion-based image generators into a feed-forward architecture for detailed depth estimation, preserving key generative features and integrating the strong generalization capabilities of models like DINOv2. FiffDepth achieves exceptional accuracy, stability, and fine-grained detail against state-of-the-art MDE approaches.</p>
+          </details>
+        </div>
+      </article>
+
+      <article class="pub">
+        <div class="pub-thumb"><img src="images/dreamdiffusion.jpg" alt="DreamDiffusion"></div>
+        <div class="pub-body">
+          <h3 class="pub-title"><a href="https://arxiv.org/abs/2306.16934">DreamDiffusion: High-Quality EEG-to-Image Generation with Temporal Masked Signal Modeling and CLIP Alignment</a></h3>
+          <p class="pub-authors"><span class="me">Yunpeng Bai</span>, <a href="https://xinntao.github.io/">Xintao Wang</a>, <a href="https://yanpei.me/">Yan-Pei Cao</a>, <a href="https://geyixiao.com/">Yixiao Ge</a>, <a href="https://www.sigs.tsinghua.edu.cn/yc2_en/main.htm">Chun Yuan</a>, <a href="https://scholar.google.com/citations?user=4oXBp9UAAAAJ&hl=en">Ying Shan</a></p>
+          <p class="pub-venue"><span class="venue-tag">ECCV 2024</span></p>
+          <p class="pub-links">
+            <a href="https://arxiv.org/abs/2306.16934">PDF</a>
+            <a href="https://github.com/bbaaii/DreamDiffusion">Code</a>
+          </p>
+          <details class="pub-abstract">
+            <summary>Abstract</summary>
+            <p>DreamDiffusion is the first method for generating high-quality images directly from brain electroencephalogram (EEG) signals, without the need to translate thoughts into text.</p>
+          </details>
+        </div>
+      </article>
+
+      <article class="pub">
+        <div class="pub-thumb"><img src="images/24-eccv-mesongs.png" alt="MesonGS"></div>
+        <div class="pub-body">
+          <h3 class="pub-title"><a href="data/24-eccv-mesongs.pdf">MesonGS: Post-training Compression of 3D Gaussians via Efficient Attribute Transformation</a></h3>
+          <p class="pub-authors"><a href="https://shuzhaoxie.github.io/">Shuzhao Xie</a>, Weixiang Zhang, <a href="https://www.chentang.cc">Chen Tang</a>, <span class="me">Yunpeng Bai</span>, Rongwei Lu, Shijia Ge, <a href="http://zwang.inflexionlab.org">Zhi Wang</a></p>
+          <p class="pub-venue"><span class="venue-tag">ECCV 2024</span></p>
+          <p class="pub-links">
+            <a href="data/24-eccv-mesongs.pdf">PDF</a>
+            <a href="https://github.com/ShuzhaoXie/MesonGS">Code</a>
+            <a href="https://shuzhaoxie.github.io/mesongs/">Project Page</a>
+          </p>
+          <details class="pub-abstract">
+            <summary>Abstract</summary>
+            <p>MesonGS is a codec for post-training compression of 3D Gaussians. We introduce a measurement criterion that considers both view-dependent and view-independent factors to assess the impact of each Gaussian point on the rendering output, enabling the removal of insignificant points, and decrease the entropy of attributes through two transformations that complement subsequent entropy coding to enhance the compression rate.</p>
+          </details>
+        </div>
+      </article>
+
+      <article class="pub">
+        <div class="pub-thumb">
+          <video playsinline autoplay loop muted preload="metadata">
+            <source src="images/HFA-GP.mp4">
+          </video>
+        </div>
+        <div class="pub-body">
+          <h3 class="pub-title"><a href="https://openaccess.thecvf.com/content/CVPR2023/html/Bai_High-Fidelity_Facial_Avatar_Reconstruction_From_Monocular_Video_With_Generative_Priors_CVPR_2023_paper.html">High-Fidelity Facial Avatar Reconstruction from Monocular Video with Generative Priors</a></h3>
+          <p class="pub-authors"><span class="me">Yunpeng Bai</span>, <a href="https://sites.google.com/site/yanbofan0124/">Yanbo Fan</a>, <a href="https://xuanwangvc.github.io/">Xuan Wang</a>, <a href="https://yzhang2016.github.io/">Yong Zhang</a>, <a href="https://mrtornado24.github.io/">Jingxiang Sun</a>, <a href="https://www.sigs.tsinghua.edu.cn/yc2_en/main.htm">Chun Yuan</a>, <a href="https://scholar.google.com/citations?user=4oXBp9UAAAAJ&hl=en">Ying Shan</a></p>
+          <p class="pub-venue"><span class="venue-tag">CVPR 2023</span></p>
+          <p class="pub-links">
+            <a href="https://openaccess.thecvf.com/content/CVPR2023/html/Bai_High-Fidelity_Facial_Avatar_Reconstruction_From_Monocular_Video_With_Generative_Priors_CVPR_2023_paper.html">PDF</a>
+            <a href="https://github.com/bbaaii/HFA-GP">Code</a>
+          </p>
+          <details class="pub-abstract">
+            <summary>Abstract</summary>
+            <p>We propose a new method for NeRF-based facial avatar reconstruction that utilizes 3D-aware generative priors. Different from existing works that depend on a conditional deformation field for dynamic modeling, we propose to learn a personalized generative prior, formulated as a local and low-dimensional subspace in the latent space of a 3D-GAN.</p>
+          </details>
+        </div>
+      </article>
+
+      <article class="pub">
+        <div class="pub-thumb"><img src="images/TextIR.png" alt="TextIR"></div>
+        <div class="pub-body">
+          <h3 class="pub-title"><a href="https://arxiv.org/abs/2302.14736">TextIR: A Simple Framework for Text-based Editable Image Restoration</a></h3>
+          <p class="pub-authors"><span class="me">Yunpeng Bai</span>, Cairong Wang, <a href="https://shuzhaoxie.github.io/">Shuzhao Xie</a>, <a href="https://scholar.google.com.hk/citations?user=OSDCB0UAAAAJ" target="_blank" rel="noopener">Chao Dong</a>, <a href="https://www.sigs.tsinghua.edu.cn/yc2_en/main.htm">Chun Yuan</a>, <a href="http://zwang.inflexionlab.org">Zhi Wang</a></p>
+          <p class="pub-venue"><span class="venue-tag">TVCG 2025</span></p>
+          <p class="pub-links">
+            <a href="https://arxiv.org/abs/2302.14736">PDF</a>
+            <a href="https://github.com/yunpeng1998/TextIR">Code</a>
+          </p>
+          <details class="pub-abstract">
+            <summary>Abstract</summary>
+            <p>We design an effective framework that allows the user to control the restoration process of degraded images with text descriptions, using CLIP's text-image feature compatibility to alleviate the difficulty of fusing text and image features. Our framework can be used for various image restoration tasks, including image inpainting, super-resolution, and colorization.</p>
+          </details>
+        </div>
+      </article>
+
+      <article class="pub">
+        <div class="pub-thumb"><img src="images/NOFA.png" alt="NOFA"></div>
+        <div class="pub-body">
+          <h3 class="pub-title"><a href="https://arxiv.org/pdf/2307.03441.pdf">NOFA: NeRF-based One-shot Facial Avatar Reconstruction</a></h3>
+          <p class="pub-authors"><a href="https://scholar.google.com/citations?user=UOE8-qsAAAAJ&hl=zh-CN">Wangbo Yu</a>, <a href="https://sites.google.com/site/yanbofan0124/">Yanbo Fan</a>, <a href="https://yzhang2016.github.io/">Yong Zhang</a>, <a href="https://xuanwangvc.github.io/">Xuan Wang</a>, <a href="https://feiiyin.github.io/">Fei Yin</a>, <span class="me">Yunpeng Bai</span>, <a href="https://yanpei.me/">Yan-Pei Cao</a>, <a href="https://scholar.google.com/citations?user=4oXBp9UAAAAJ&hl=en">Ying Shan</a>, <a href="https://scholar.google.com/citations?user=T-HaQ84AAAAJ&hl=en">Yang Wu</a>, Zhongqian Sun, <a href="https://sites.google.com/site/baoyuanwu2015/home">Baoyuan Wu</a></p>
+          <p class="pub-venue"><span class="venue-tag">SIGGRAPH 2023</span></p>
+          <p class="pub-links">
+            <a href="https://arxiv.org/pdf/2307.03441.pdf">PDF</a>
+          </p>
+          <details class="pub-abstract">
+            <summary>Abstract</summary>
+            <p>We propose a one-shot 3D facial avatar reconstruction framework, which only requires a single source image to reconstruct a high-fidelity 3D facial avatar, by leveraging the rich generative prior of 3D GANs and developing an efficient encoder-decoder network.</p>
+          </details>
+        </div>
+      </article>
+
+      <article class="pub">
+        <div class="pub-thumb"><img src="images/SEAM.png" alt="SEAM"></div>
+        <div class="pub-body">
+          <h3 class="pub-title"><a href="https://arxiv.org/pdf/2302.06845.pdf">SEAM: Searching Transferable Mixed-Precision Quantization Policy through Large Margin Regularization</a></h3>
+          <p class="pub-authors"><a href="https://www.chentang.cc">Chen Tang</a>, <a href="https://scholar.google.com/citations?user=Zq7-VzwAAAAJ&hl=en">Kai Ouyang</a>, <a href="https://zenghaochai.com/">Zenghao Chai</a>, <span class="me">Yunpeng Bai</span>, <a href="https://mengyuan404.github.io/">Yuan Meng</a>, <a href="http://zwang.inflexionlab.org">Zhi Wang</a>, <a href="https://scholar.google.com/citations?user=7t2jzpgAAAAJ&hl=en">Wenwu Zhu</a></p>
+          <p class="pub-venue"><span class="venue-tag">ACM MM 2023</span></p>
+          <p class="pub-links">
+            <a href="https://arxiv.org/pdf/2302.06845.pdf">PDF</a>
+          </p>
+          <details class="pub-abstract">
+            <summary>Abstract</summary>
+            <p>We propose to search the effective mixed-precision quantization policy by using a small proxy dataset for a model trained on a large-scale one, breaking the routine that requires a consistent dataset at model training and MPQ policy search time, which significantly improves MPQ searching efficiency.</p>
+          </details>
+        </div>
+      </article>
+
+      <article class="pub">
+        <div class="pub-thumb">
+          <video playsinline autoplay loop muted preload="metadata">
+            <source src="images/PS-NeRV.mp4">
+          </video>
+        </div>
+        <div class="pub-body">
+          <h3 class="pub-title"><a href="https://arxiv.org/abs/2208.03742">PS-NeRV: Patch-wise Stylized Neural Representations for Videos</a></h3>
+          <p class="pub-authors"><span class="me">Yunpeng Bai</span>, <a href="https://scholar.google.com.hk/citations?user=OSDCB0UAAAAJ" target="_blank" rel="noopener">Chao Dong</a>, Cairong Wang, <a href="https://www.sigs.tsinghua.edu.cn/yc2_en/main.htm">Chun Yuan</a></p>
+          <p class="pub-venue"><span class="venue-tag">ICIP 2023</span></p>
+          <p class="pub-links">
+            <a href="https://arxiv.org/abs/2208.03742">PDF</a>
+          </p>
+          <details class="pub-abstract">
+            <summary>Abstract</summary>
+            <p>We study how to represent a video with implicit neural representations (INRs) and propose a patch-wise solution, PS-NeRV, which represents videos as a function of patches and the corresponding patch coordinates. It naturally inherits the advantages of image-wise methods and achieves excellent reconstruction performance with fast decoding speed.</p>
+          </details>
+        </div>
+      </article>
+
+      <article class="pub">
+        <div class="pub-thumb"><img src="images/eccv2022.jpg" alt="SSCN"></div>
+        <div class="pub-body">
+          <h3 class="pub-title"><a href="https://arxiv.org/pdf/2112.01335.pdf">Semantic-Sparse Colorization Network for Deep Exemplar-based Colorization</a></h3>
+          <p class="pub-authors"><span class="me">Yunpeng Bai</span>, <a href="https://scholar.google.com.hk/citations?user=OSDCB0UAAAAJ" target="_blank" rel="noopener">Chao Dong</a>, <a href="https://zenghaochai.com/">Zenghao Chai</a>, Andong Wang, <a href="https://xuzhengzhuo.com/">Zhengzhuo Xu</a>, <a href="https://www.sigs.tsinghua.edu.cn/yc2_en/main.htm">Chun Yuan</a></p>
+          <p class="pub-venue"><span class="venue-tag">ECCV 2022</span></p>
+          <p class="pub-links">
+            <a href="https://arxiv.org/pdf/2112.01335.pdf">PDF</a>
+            <a href="https://github.com/bbaaii/SSC-Net">Code</a>
+          </p>
+          <details class="pub-abstract">
+            <summary>Abstract</summary>
+            <p>We propose the Semantic-Sparse Colorization Network (SSCN) to transfer both the global image style and detailed semantic-related colors to gray-scale images in a coarse-to-fine manner, perfectly balancing global and local colors while alleviating the ambiguous matching problem.</p>
+          </details>
+        </div>
+      </article>
+
+      <article class="pub">
+        <div class="pub-thumb"><img src="images/cms-lstm.png" alt="CMS-LSTM"></div>
+        <div class="pub-body">
+          <h3 class="pub-title"><a href="https://arxiv.org/pdf/2102.03586.pdf">CMS-LSTM: Context Embedding and Multi-Scale Spatiotemporal Expression LSTM for Predictive Learning</a></h3>
+          <p class="pub-authors"><a href="https://zenghaochai.com/">Zenghao Chai</a>, <a href="https://xuzhengzhuo.com/">Zhengzhuo Xu</a>, <span class="me">Yunpeng Bai</span>, <a href="https://scholar.google.com/citations?user=t4et8FEAAAAJ&hl=en">Zhihui Lin</a>, <a href="https://www.sigs.tsinghua.edu.cn/yc2_en/main.htm">Chun Yuan</a></p>
+          <p class="pub-venue"><span class="venue-tag">ICME 2022</span></p>
+          <p class="pub-links">
+            <a href="https://arxiv.org/pdf/2102.03586.pdf">PDF</a>
+            <a href="https://github.com/czh-98/CMS-LSTM">Code</a>
+          </p>
+          <details class="pub-abstract">
+            <summary>Abstract</summary>
+            <p>To tackle increasing ambiguity during forecasting, CMS-LSTM focuses on context correlations and multi-scale spatiotemporal flow with fine-grained local details, containing two elaborately designed blocks: Context Embedding (CE) for abundant context interactions and Spatiotemporal Expression (SE) for multi-scale spatiotemporal expression in hidden states.</p>
+          </details>
+        </div>
+      </article>
+
+      <article class="pub">
+        <div class="pub-thumb"><img src="images/TRNet.png" alt="TRNet"></div>
+        <div class="pub-body">
+          <h3 class="pub-title"><a href="https://ieeexplore.ieee.org/abstract/document/9339852">Latent Tangent Space Representation for Normal Estimation</a></h3>
+          <p class="pub-authors"><a href="https://jjcao.github.io/">Junjie Cao</a>, Hairui Zhu, <span class="me">Yunpeng Bai</span>, Jun Zhou, <a href="https://jspan.github.io/">Jinshan Pan</a>, <a href="http://faculty.dlut.edu.cn/ZhixunSu/en/index.htm">Zhixun Su</a></p>
+          <p class="pub-venue"><span class="venue-tag">IEEE TIE 2022</span></p>
+          <p class="pub-links">
+            <a href="https://ieeexplore.ieee.org/abstract/document/9339852">PDF</a>
+            <a href="https://github.com/jjcao/TRNET19">Code</a>
+          </p>
+          <details class="pub-abstract">
+            <summary>Abstract</summary>
+            <p>We propose a simple deep network, TRNet, to estimate normal vectors based on a latent tangent space representation learned in the network. For each query point, the representation is a set of latent points spanning its tangent plane, generated using only the coordinates of its neighbors and regularized by a differentiable RANSAC-like component.</p>
+          </details>
+        </div>
+      </article>
+
+    </section>
+
+    </div><!-- /main-col -->
+
+    <!-- ================= Sidebar ================= -->
+    <aside class="side-col">
+
+      <section id="blog" class="side-section">
+        <h2 class="section-title">Blog</h2>
+        <ul class="blog-list">
+          <!-- To add a post: copy blog/hello-world.html, edit it, then copy the <li> below and update it. Newest first. -->
+          <li>
+            <a class="blog-item" href="blog/hello-world.html">
+              <span class="blog-date">2026.08</span>
+              <span class="blog-title">Hello, World: This Is an Example Post</span>
+              <span class="blog-excerpt">A template showing how posts look — replace it with your first real post.</span>
+            </a>
+          </li>
+        </ul>
+      </section>
+
+      <section id="topics" class="side-section">
+        <h2 class="section-title">Topics</h2>
+        <div class="tag-cloud">
+          <span class="tag">3D Generation</span>
+          <span class="tag">Video Diffusion</span>
+          <span class="tag">Novel View Synthesis</span>
+          <span class="tag">Depth Estimation</span>
+          <span class="tag">Neural Avatars</span>
+          <span class="tag">3D Gaussian Splatting</span>
+        </div>
+      </section>
+
+    </aside>
+    </div><!-- /layout -->
+
+    <footer class="site-footer">
+      <span>© 2026 Yunpeng Bai</span>
+      <span>Designed &amp; built by hand — no template.</span>
+    </footer>
+
+  </div>
+
+  <script>
+    // Theme toggle
+    (function () {
+      var btn = document.getElementById("themeToggle");
+      btn.addEventListener("click", function () {
+        var root = document.documentElement;
+        var next = root.getAttribute("data-theme") === "dark" ? "light" : "dark";
+        root.setAttribute("data-theme", next);
+        localStorage.setItem("theme", next);
+      });
+    })();
+  </script>
+</body>
+</html>
