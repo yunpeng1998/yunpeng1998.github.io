@@ -280,6 +280,11 @@ section { margin-top: 64px; }
 
 .news-list .what b { color: var(--text); font-weight: 600; }
 
+.news-list .what a,
+.news-list .what a b { color: var(--accent); }
+
+.news-list .what a:hover { text-decoration: underline; opacity: 1; }
+
 /* ---------- publications ---------- */
 
 .pub {
