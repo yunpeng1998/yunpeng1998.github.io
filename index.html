@@ -86,6 +86,35 @@
       </ul>
     </section>
 
+    <!-- ================= Technical Reports ================= -->
+    <section id="reports">
+      <h2 class="section-title">Preprints &amp; Technical Reports</h2>
+
+      <article class="pub">
+        <div class="pub-thumb">
+          <video playsinline autoplay loop muted preload="metadata">
+            <source src="images/x_demo_full.mp4">
+          </video>
+        </div>
+        <div class="pub-body">
+          <h3 class="pub-title"><a href="https://arxiv.org/abs/2608.14790">Qwen-Video-Edit: Instruction-Based Video Editing by Repurposing an Image Editing Model</a></h3>
+          <p class="pub-authors"><span class="me">Yunpeng Bai</span>, <a href="https://yossigandelsman.github.io/">Yossi Gandelsman</a>, <a href="https://mgharbi.com/">Michaël Gharbi</a>, <a href="https://www.cs.utexas.edu/~huangqx/">Qixing Huang</a></p>
+          <p class="pub-venue"><span class="venue-tag">arXiv 2026</span></p>
+          <p class="pub-links">
+            <a href="https://arxiv.org/abs/2608.14790">PDF</a>
+            <a href="https://yunpeng1998.github.io/Qwen-Video-Edit-Page/">Project Page</a>
+            <a href="https://github.com/yunpeng1998/Qwen-Video-Edit">Code</a>
+            <a href="https://huggingface.co/yunpeng1998/Qwen-Video-Edit">Model</a>
+          </p>
+          <details class="pub-abstract">
+            <summary>Abstract</summary>
+            <p>We show that a strong instruction-based image editing model can edit videos by operating directly on video-VAE latents. Starting from Qwen-Image-Edit, we arrange the latent frames of a Wan 2.1 video VAE as tiles of one large virtual image, reuse the editor's image positional encoding for every tile, and bridge the two latent spaces with a pair of lightweight input/output projections warm-started from the editor's own patchify and unpatchify layers. The system is fine-tuned on the public Ditto-1M editing triplets, with a few denoising steps of Wan 2.2 as an optional temporal enhancer. Our results suggest that per-frame video latents remain close enough to the image domain that mature image editing priors transfer with minimal adaptation.</p>
+          </details>
+        </div>
+      </article>
+
+    </section>
+
     <!-- ================= Publications ================= -->
     <section id="publications">
       <h2 class="section-title">Selected Publications</h2>
